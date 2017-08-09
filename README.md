@@ -5,11 +5,6 @@
 - Simple Vue Application, Much helpful learning resource in realtime.
 - Based on ideas of Mr Seeschweiler
 
----
-Email me at [niyaz.www@gmail.com](Mailto:niyaz.www@gmail.com)
-
-<p align="center"><a href="https://niyazahamed.wordpress.com" target="_blank">Niyaz Tech. Blog</p>
-
 ## Build Setup
 
 ``` bash
@@ -27,3 +22,9 @@ npm run build --report
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Contact
+---
+Email me at [niyaz.www@gmail.com](Mailto:niyaz.www@gmail.com)
+
+<p align="center"><a href="https://niyazahamed.wordpress.com" target="_blank">Niyaz Tech. Blog</p>
