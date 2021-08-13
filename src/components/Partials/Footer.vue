@@ -9,15 +9,15 @@
         <div class="block w-full pl-10 mt-6 text-sm lg:w-3/4 sm:flex lg:mt-0">
             <ul class="flex flex-col w-full p-0 font-medium text-left text-gray-700 list-none">
                 <li><a target="_blank" class="inline-block px-3 py-2 text-gray-500 no-underline hover:text-gray-600"
-                        href="https://niyazjamal.wordpress.com/">Wordpress Blog</a></li>
+                        href="https://niyazjamal.wordpress.com/">Blog</a></li>
             </ul>
             <ul class="flex flex-col w-full p-0 font-medium text-left text-gray-700 list-none">
                 <li><a target="_blank" class="inline-block px-3 py-2 text-gray-500 no-underline hover:text-gray-600"
-                        href="https://www.youtube.com/channel/UClwUUCWcQIBAJygIjWeRQzQ">YT Media</a></li>
+                        href="https://www.youtube.com/channel/UClwUUCWcQIBAJygIjWeRQzQ">Media</a></li>
             </ul>
             <ul class="flex flex-col w-full p-0 font-medium text-left text-gray-700 list-none">
                 <li><a target="_blank" class="inline-block px-3 py-2 text-gray-500 no-underline hover:text-gray-600"
-                        href="https://nlabs.netlify.app">Network</a></li>
+                        href="https://nlabs.netlify.app">Services</a></li>
             </ul>
             <div class="flex flex-col w-full text-gray-700">
                 <div class="flex justify-start pl-4 mt-2"><a href="https://github.com/jniyaz"

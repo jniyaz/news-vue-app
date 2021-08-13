@@ -1,11 +1,11 @@
 <template>
     <main class="text-gray-700 body-font overflow-hidden bg-gray-100">
         <section class="text-gray-700 body-font overflow-hidden bg-gray-100">
-            <div class="container px-5 py-12 mx-auto">
+            <div class="container px-3 py-6 mx-auto">
                 <div class="lg:w-full mx-auto flex flex-wrap">
-                    <div class="lg:w-1/4">
+                    <div class="w-full mb-6 lg:w-1/4">
                         <div>
-                            <div class="hidden lg:block">
+                            <div class="lg:block">
                                 <div class="bg-white shadow p-4 rounded">
                                     <div class="flex justify-center mt-4">
                                         <Source
@@ -17,7 +17,7 @@
                                     </div>
                                 </div>
 
-                                <div class="bg-white p-4 mt-4 shadow rounded w-full">
+                                <div class="bg-white p-4 mt-4 shadow rounded w-full hidden lg:block">
                                     <h4 class="text-gray-600 font-bold mb-3">Ads</h4>
                                     <div class="flex flex-row flex-wrap text-xs select-none">
                                         <a href="https://www.vultr.com/?ref=7051589" target="_blank"><img src="https://www.vultr.com/media/banner_3.png" width="300" height="250" class="responsive"></a>
@@ -36,7 +36,7 @@
                             <p class="mt-4 px-4 text-sm text-red-300">{{ newsError }}</p>
                         </div>
 
-                        <div v-if="isNewsFetching && !newsCollection" class="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto">
+                        <div v-if="isNewsFetching && !newsCollection" class="border border-blue-300 shadow rounded-md mt-3 p-4 max-w-sm w-full mx-auto">
                             <div class="animate-pulse flex space-x-4">
                                 <div class="flex-1 space-y-4 py-1">
                                     <div class="h-4 bg-blue-400 rounded w-3/4"></div>
@@ -105,6 +105,7 @@ export default {
 
         const fetchNewsCollection = () => {
             isNewsFetching.value = true;
+            newsError.value = null;
             fetch(`https://newsapi.org/v1/articles?source=${sourceName.value}&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`)
             .then(res => res.json())
             .then(data => {
@@ -116,7 +117,6 @@ export default {
                 newsCollection.value = data.articles;
             })
             .catch(err => {
-                console.log(err)
                 isNewsFetching.value = false;
                 newsError.value = "Something went wrong. Try again later.";
             })

@@ -10,12 +10,12 @@
 
     <div class="flex flex-1 justify-start px-4 sm:px-6 lg:max-w-8xl lg:px-24">
         <div class="flex items-center space-x-4">
-            <a href="#_" class="text-xl font-black leading-none text-gray-900 select-none logo">News<span class="text-indigo-600">.</span></a>
+            <a href="/" class="text-xl font-black leading-none text-gray-900 select-none logo">News<span class="text-indigo-600">.</span></a>
         </div>
         <div class="py-3 hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
-            <a class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 focus:outline-none bg-gray-300" href="/">Home</a>
-            <a class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 focus:outline-none" href="#">About</a>
+            <!-- <a class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 focus:outline-none bg-gray-300" href="/">Home</a>
+            <a class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 focus:outline-none" href="#">About</a> -->
     </div>
         </div>
     </div>
