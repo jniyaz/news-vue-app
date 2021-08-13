@@ -1,6 +1,6 @@
 # News App
 
-- News App
+- Simple News App
 - Using Vue 3, Vite, TailwindCss, newsapi.org
 
 ## Build Setup
@@ -18,11 +18,6 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-## Contact
-
-Email me at [niyaz.www@gmail.com](Mailto:niyaz.www@gmail.com)
-
-<p align="center"><a href="https://niyazahamed.wordpress.com" target="_blank">Niyaz Tech. Blog</p>
+- checkout the [vue3 guide](https://v3.vuejs.org/guide/introduction.html)
+- checkout the [vite guide](https://vitejs.dev/)
+- checkout the [tailwind guide](https://tailwindcss.com/docs)
