@@ -8,15 +8,15 @@
                             <div class="hidden lg:block">
                                 <div class="bg-white shadow p-4 rounded">
                                     <div class="flex justify-center mt-4">
-                                        <Source 
-                                            :loading="isSourceFetching" 
-                                            :sources="sourcesList" 
-                                            :error="sourceError" 
-                                            @source-update="sourceUpdated" 
+                                        <Source
+                                            :loading="isSourceFetching"
+                                            :sources="sourcesList"
+                                            :error="sourceError"
+                                            @source-update="sourceUpdated"
                                         />
                                     </div>
                                 </div>
-                                
+
                                 <div class="bg-white p-4 mt-4 shadow rounded w-full">
                                     <h4 class="text-gray-600 font-bold mb-3">Ads</h4>
                                     <div class="flex flex-row flex-wrap text-xs select-none">
@@ -105,7 +105,7 @@ export default {
 
         const fetchNewsCollection = () => {
             isNewsFetching.value = true;
-            fetch(`https://newsapi.org/v1/articles?source=${sourceName.value}&apiKey=${process.env.NEWS_API_KEY}`)
+            fetch(`https://newsapi.org/v1/articles?source=${sourceName.value}&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`)
             .then(res => res.json())
             .then(data => {
                 isNewsFetching.value = false;
