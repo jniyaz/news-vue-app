@@ -1,9 +1,7 @@
 # News App
 
-- Simple News app using VueJs and External newsapi.org api
-- This project has been included bootstrap, bootstrap material theme and jquery
-- Simple Vue Application, Much helpful learning resource in realtime.
-- Based on ideas of Mr Seeschweiler
+- News App
+- Using Vue 3, Vite, TailwindCss, newsapi.org
 
 ## Build Setup
 
