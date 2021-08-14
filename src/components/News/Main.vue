@@ -26,6 +26,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="w-full lg:w-3/4 px-6">
                         <div class="lg:ml-4">
                             <h1 class="text-gray-800 md:text-2xl font-bold mb-2">Latest News</h1>
@@ -47,7 +48,7 @@
                             </div>
                         </div>
 
-                        <div v-else class="grid grid-flow-col grid-cols-2 grid-rows-5 gap-2">
+                        <div v-else class="grid md:grid-flow-col md:grid-cols-2 md:grid-rows-5 gap-2">
                             <div v-for="(news, index) in newsCollection" :key="index">
                                 <Article :news="news" />
                             </div>
@@ -72,8 +73,8 @@ export default {
 
     setup () {
         const isSourceFetching = ref(false);
-        const sourceName = ref('bbc-news');
         const sourcesList = ref(null);
+        const sourceName = ref(null);
         const sourceError = ref(null);
         const isNewsFetching = ref(false);
         const newsCollection = ref(null);
@@ -105,7 +106,9 @@ export default {
 
         const fetchNewsCollection = () => {
             isNewsFetching.value = true;
+            newsCollection.value = null;
             newsError.value = null;
+            sourceName.value = sourceName.value ? sourceName.value : sourcesList.value ? sourcesList.value[0].id : 'abc-news-au';
             fetch(`https://newsapi.org/v1/articles?source=${sourceName.value}&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`)
             .then(res => res.json())
             .then(data => {

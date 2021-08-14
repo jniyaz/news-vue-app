@@ -20,10 +20,10 @@
                     </div>
 
                     <h3 class="font-semibold text-gray-800 my-4 hover:underline text-lg">
-                        <a href="#">{{ news.title }}</a>
+                        <a :href="news.url" target="_blank">{{ news.title.length > 80 ? news.title.substring(0,80) + '..' : news.title }}</a>
                     </h3>
 
-                    <div class="text-gray-700">{{ news.description.substring(0, 80) + '...' }}</div>
+                    <div class="text-gray-700">{{ news.description.substring(0, 90) + '...' }}</div>
 
                     <div class="mt-4">
                         <a :href="news.url" target="_blank" class="py-2 text-indigo-600 text-xs uppercase hover:underline">Read More
